@@ -4,11 +4,6 @@ import six
 
 post = ["SW1W 0NY", "PO16 7GZ", "GU16 7HF", "L1 8JQ"]
 
-
-class ValidationException(Exception):
-    pass
-
-
 class Uk:
     @classmethod
     def validate(cls, code):
@@ -102,3 +97,9 @@ class Uk:
 
         """
         return True if re.match("[0-9][abd-hjlnp-uw-z]{2}", inwardcode) else False
+
+
+
+class ValidationException(Exception):
+    pass
+
