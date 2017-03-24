@@ -11,7 +11,7 @@ class Uk:
         Check the validity of postal code
         """
         if isinstance(code, six.binary_type):
-            code = str(code, "utf-8")
+            code = str(code, "utf-8") if six.PY3 else code.decode("utf-8")
         if not isinstance(code, six.string_types):
             raise ValueError("expected  string or bytes-like object but got a '%s' " % code.__class__.__name__)
 
