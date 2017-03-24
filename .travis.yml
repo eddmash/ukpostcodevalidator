@@ -9,4 +9,4 @@ python:
 before_install:
     - pip install -U pytest
 script:
-    - py.test ukpostcodevalidator
+    - py.test tests.py
