@@ -22,10 +22,6 @@ class Uk:
             if cls.check_outward_code(outwardcode) and cls.check_inward_code(inwardcode):
                 valid = True
 
-        if not valid:
-            raise ValidationException("' %s ' is not a valid UK postal code " % code)
-
-        print("the code is = %s" % code)
         return valid
 
     @classmethod
@@ -78,6 +74,8 @@ class Uk:
                 # must fullfill 2nd position requirement
                 if re.match("^[a-pr-uwyz][a-hl-y]", outwardcode):
                     return True
+                else:
+                    return False
 
             # takes care of A9 structure
             return True
@@ -97,9 +95,4 @@ class Uk:
 
         """
         return True if re.match("[0-9][abd-hjlnp-uw-z]{2}", inwardcode) else False
-
-
-
-class ValidationException(Exception):
-    pass
 
