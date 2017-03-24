@@ -1,3 +1,4 @@
+`Documentation <http://ukpostcodevalidator.readthedocs.io/en/latest>`_
 
 Installation
 ------------
@@ -13,4 +14,3 @@ To validate the postal code for UK just invole the validate method on the Uk cla
     >>> from ukpostcodevalidator import validator
     >>> validator.Uk.validate("AA9A 9AA")
     
-`Documentation <http://ukpostcodevalidator.readthedocs.io/en/latest/>`_
