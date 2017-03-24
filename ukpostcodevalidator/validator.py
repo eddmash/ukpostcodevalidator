@@ -17,9 +17,9 @@ class Uk:
 
         valid = False
         code = code.lower()
-        if cls._check_postal_code(code):
+        if cls.check_postal_code(code):
             outwardcode, inwardcode = code.split(" ")
-            if cls._check_outward_code(outwardcode) and cls._check_inward_code(inwardcode):
+            if cls.check_outward_code(outwardcode) and cls.check_inward_code(inwardcode):
                 valid = True
 
         if not valid:
@@ -29,7 +29,7 @@ class Uk:
         return valid
 
     @classmethod
-    def _check_postal_code(cls, postcode):
+    def check_postal_code(cls, postcode):
         """
         Checks the basic structure of the code.
 
@@ -45,7 +45,7 @@ class Uk:
         return True if re.match("[a-z]{1,2}[0-9][0-9a-z]?\s{1}[0-9][a-z]{2}", postcode) else False
 
     @classmethod
-    def _check_outward_code(cls, outwardcode):
+    def check_outward_code(cls, outwardcode):
         """
         Check the validity of postal code - outward code section.
 
@@ -85,7 +85,7 @@ class Uk:
         return False
 
     @classmethod
-    def _check_inward_code(cls, inwardcode):
+    def check_inward_code(cls, inwardcode):
         """
         Check the validity of postal code - inward code section.
 
