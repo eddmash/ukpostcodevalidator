@@ -1,3 +1,6 @@
+[![Documentation Status](https://readthedocs.org/projects/ukpostcodevalidator/badge/?version=latest)](http://ukpostcodevalidator.readthedocs.io/en/latest/?badge=latest)
+[![Build Status](https://travis-ci.org/eddmash/ukpostcodevalidator.svg?branch=master)](https://travis-ci.org/eddmash/ukpostcodevalidator)
+
 `Documentation <http://ukpostcodevalidator.readthedocs.io/en/latest/>`_
 
 Installation

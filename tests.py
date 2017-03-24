@@ -1,5 +1,3 @@
-import unittest
-
 import pytest
 
 from ukpostcodevalidator import validator
@@ -55,6 +53,6 @@ def test_input_is_string():
     ("AJ9 9AA", False),
     ("AZ9 9AA", False),
 ])
-def test_overall_format(test_input, expected):
+def test_postalcode_format(test_input, expected):
     """Tests the overall format of the codes"""
     assert validator.Uk.validate(test_input) == expected
