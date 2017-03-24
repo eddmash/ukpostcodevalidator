@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Welcome to ukpostcodevalidator’s documentation! &mdash; ukpostcodevalidator 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="ukpostcodevalidator 0.1 documentation" href="#" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-ukpostcodevalidator.validator">
+<span id="welcome-to-ukpostcodevalidator-s-documentation"></span><h1>Welcome to ukpostcodevalidator&#8217;s documentation!<a class="headerlink" href="#module-ukpostcodevalidator.validator" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ukpostcodevalidator.validator.Uk">
+<em class="property">class </em><code class="descclassname">ukpostcodevalidator.validator.</code><code class="descname">Uk</code><span class="sig-paren">(</span><em>postcode</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ukpostcodevalidator/validator.html#Uk"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ukpostcodevalidator.validator.Uk" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ukpostcodevalidator.validator.Uk.check_inward_code">
+<code class="descname">check_inward_code</code><span class="sig-paren">(</span><em>inwardcode</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ukpostcodevalidator/validator.html#Uk.check_inward_code"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ukpostcodevalidator.validator.Uk.check_inward_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the validity of postal code - inward code section.</p>
+<dl class="docutils">
+<dt>valid if :</dt>
+<dd><ul class="first last simple">
+<li>must start with a digit followed by two letters</li>
+<li>the letters don&#8217;t use CIKMOV.</li>
+</ul>
+</dd>
+</dl>
+<p>:return True|False</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ukpostcodevalidator.validator.Uk.check_outward_code">
+<code class="descname">check_outward_code</code><span class="sig-paren">(</span><em>outwardcode</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ukpostcodevalidator/validator.html#Uk.check_outward_code"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ukpostcodevalidator.validator.Uk.check_outward_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the validity of postal code - outward code section.</p>
+<dl class="docutils">
+<dt>code is a valid outward code if:</dt>
+<dd><ul class="first last simple">
+<li>has two and four characters long</li>
+<li>The letters QVX are not used in the first position.</li>
+<li>The letters IJZ are not used in the second position.</li>
+<li>The only letters to appear in the third position are ABCDEFGHJKPSTUW when the structure starts with A9A.</li>
+<li>The only letters to appear in the fourth position are ABEHMNPRVWXY when the structure starts with AA9A.</li>
+</ul>
+</dd>
+</dl>
+<p>:return True|False</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ukpostcodevalidator.validator.Uk.get_postal_area">
+<code class="descname">get_postal_area</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ukpostcodevalidator/validator.html#Uk.get_postal_area"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ukpostcodevalidator.validator.Uk.get_postal_area" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ukpostcodevalidator.validator.Uk.get_postal_sector">
+<code class="descname">get_postal_sector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ukpostcodevalidator/validator.html#Uk.get_postal_sector"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ukpostcodevalidator.validator.Uk.get_postal_sector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ukpostcodevalidator.validator.Uk.get_postal_unit">
+<code class="descname">get_postal_unit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ukpostcodevalidator/validator.html#Uk.get_postal_unit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ukpostcodevalidator.validator.Uk.get_postal_unit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ukpostcodevalidator.validator.Uk.validate">
+<code class="descname">validate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ukpostcodevalidator/validator.html#Uk.validate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ukpostcodevalidator.validator.Uk.validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the validity of postal code</p>
+<dl class="docutils">
+<dt>checks the following patterns pass:</dt>
+<dd><dl class="first last docutils">
+<dt>AA9A 9AA</dt>
+<dd>A9A 9AA
+A9 9AA
+A99 9AA
+AA9 9AA
+AA99 9AA</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="ukpostcodevalidator.validator.ValidationException">
+<em class="property">exception </em><code class="descclassname">ukpostcodevalidator.validator.</code><code class="descname">ValidationException</code><a class="reference internal" href="_modules/ukpostcodevalidator/validator.html#ValidationException"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ukpostcodevalidator.validator.ValidationException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/library/exceptions.html#exceptions.Exception" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">exceptions.Exception</span></code></a></p>
+</dd></dl>
+
+<span class="target" id="module-ukpostcodevalidator"></span></div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Eddilbert Macharia.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="_sources/index.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
