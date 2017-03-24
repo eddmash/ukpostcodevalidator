@@ -1,4 +1,4 @@
-`Documentation <http://ukpostcodevalidator.readthedocs.io/en/latest>`_
+`Documentation <http://ukpostcodevalidator.readthedocs.io/en/latest/>`_
 
 Installation
 ------------
