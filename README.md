@@ -22,3 +22,8 @@ To validate the postal code for UK just invole the validate method on the Uk cla
     >>> from ukpostcodevalidator import validator
     >>> validator.Uk.validate("AA9A 9AA")
     
+Running Tests
+-------------
+To run tests for the project run the following command while inside the root directory ukpostcodevalidator
+
+    py.test tests.py 
