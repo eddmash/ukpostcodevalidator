@@ -24,11 +24,14 @@ Usage
 -----
 To validate the postal code for UK just invole the validate method on the Uk class as show below:
 
-..code-block:: python
+.. code-block:: python
 
     >>> from ukpostcodevalidator import validator
     >>> validator.Uk.validate("AA9A 9AA")
 
+
+Api Documentation
+-----------------
 
 .. automodule:: ukpostcodevalidator.validator
     :members:
