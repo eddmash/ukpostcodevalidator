@@ -11,6 +11,9 @@ ukpostcodevalidator's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+This library validates the uk postal code based on the formating rules found on this article
+https://en.wikipedia.org/wiki/Postcodes_in_the_United_Kingdom#Formatting
+
 Installation
 ------------
 You can install `ukpostcodevalidator` using pip:

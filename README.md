@@ -1,7 +1,12 @@
+
 [![Documentation Status](https://readthedocs.org/projects/ukpostcodevalidator/badge/?version=latest)](http://ukpostcodevalidator.readthedocs.io/en/latest/?badge=latest)
 [![Build Status](https://travis-ci.org/eddmash/ukpostcodevalidator.svg?branch=master)](https://travis-ci.org/eddmash/ukpostcodevalidator)
 
-`Documentation <http://ukpostcodevalidator.readthedocs.io/en/latest/>`_
+This library validates the uk postal code based on the formating rules found on this article
+<https://en.wikipedia.org/wiki/Postcodes_in_the_United_Kingdom#Formatting>
+
+Documentation can be found here
+<http://ukpostcodevalidator.readthedocs.io/en/latest/>
 
 Installation
 ------------
